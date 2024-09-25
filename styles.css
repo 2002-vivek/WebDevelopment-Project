@@ -237,3 +237,412 @@ nav ul li a:hover {
   background-color: #e6c400;
 }
 
+
+
+/* Who Are We Section */
+.who-section {
+  background-color: #bfbfbf ;    
+  width: 80%;
+  margin-top: 10rem;
+  height: 45vh;
+}
+
+.who-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  animation: motion 2.2s ease forwards;
+}
+
+@keyframes motion {
+  0%{
+      opacity: 0;
+      transform:translateX(-100%);
+  }
+
+  100%{
+      opacity: 1;
+      transform:translateX(0);
+  }
+}
+
+.who-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+  max-width: 50%;
+}
+
+.who-content h2 {
+  font-size: 2.25rem; 
+  margin-bottom: 1.25rem; 
+}
+
+.who-content p {
+  font-size: 1rem; 
+  line-height: 1.8;
+  font-weight: 500;
+  margin-bottom: 1.25rem; 
+}
+
+/* Right Side Image Styling */
+.who-image {
+  width: 20%;
+  height: 50%;
+  transition: transform 0.3s ease;  
+}
+
+.who-image img{
+  width: 100%;
+  height: 100%;
+}
+.who-image:hover{
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .who-section {
+    width: 100%; 
+    margin-top: 5rem;
+    height: auto; 
+  }
+
+  .who-container {
+    flex-direction: column; 
+    align-items: center;
+    text-align: center; 
+    padding: 1rem; 
+  }
+
+  .who-content {
+    max-width: 100%; 
+    padding: 1rem; 
+  }
+
+  .who-image {
+    width: 80%; 
+    height: auto; 
+    margin-top: 1.5rem; 
+  }
+}
+
+
+
+/* why-choose-us */
+
+
+.why-section{
+  background-color: #bfbfbf ;    
+  width: 80%;
+  margin-left: auto;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  height: 45vh;
+}
+
+.why-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: motion2 2.2s ease backwards;
+  height: 100%;
+}
+
+@keyframes motion2 {
+  0%{
+      opacity: 0;
+      transform:translateX(100%);
+  }
+  
+  100%{
+        opacity: 1;
+        transform:translateX(0);
+    }
+}
+
+.why-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+  max-width: 50%;
+}
+
+.why-content h2{
+  font-size: 2.25rem; 
+  margin-bottom: 1.25rem; 
+}
+
+.why-content p{
+  font-size: 1rem; 
+  line-height: 1.8;
+  font-weight: 500;
+  margin-bottom: 1.25rem; 
+}
+
+.why-image {
+  width: 20%;
+  height: 50%;
+  transition: transform 0.3s ease;  
+}
+
+.why-image img{
+  width: 100%;
+  height: 100%;
+}
+.why-image:hover{
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+  .why-section {
+    width: 100%; 
+    margin-top: 5rem;
+    height: auto; 
+  }
+
+  .why-container {
+    flex-direction: column; 
+    align-items: center;
+    text-align: center; 
+    padding: 1rem; 
+  }
+
+  .why-content {
+    max-width: 100%; 
+    padding: 1rem; 
+    order: 1;
+  }
+
+  .why-image {
+    width: 80%; 
+    height: auto; 
+    margin-top: 1.5rem; 
+    order: 2;
+  }
+}
+
+
+/* Quality-Section */
+
+
+.quality-section {
+  background-color: #bfbfbf ;    
+  width: 80%;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  height: 45vh;
+}
+
+.quality-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  animation: motion 2.2s ease forwards;
+}
+
+@keyframes motion {
+  0%{
+      opacity: 0;
+      transform:translateX(-100%);
+  }
+
+  100%{
+      opacity: 1;
+      transform:translateX(0);
+  }
+}
+
+.quality-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem;
+  max-width: 50%;
+}
+
+.quality-content h2 {
+  font-size: 2.25rem; 
+  margin-bottom: 1.25rem; 
+}
+
+.quality-content p {
+  font-size: 1rem; 
+  line-height: 1.8;
+  font-weight: 500;
+  margin-bottom: 1.25rem; 
+}
+
+
+
+/* Right Side Image Styling */
+.quality-image {
+  width: 20%;
+  height: 50%;
+  transition: transform 0.3s ease;  
+}
+
+.quality-image img{
+  width: 100%;
+  height: 100%;
+}
+.quality-image:hover{
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .quality-section {
+    width: 100%; 
+    margin-top: 5rem;
+    height: auto; 
+  }
+
+  .quality-container {
+    flex-direction: column; 
+    align-items: center;
+    text-align: center; 
+    padding: 1rem; 
+  }
+
+  .quality-content {
+    max-width: 100%; 
+    padding: 1rem; 
+  }
+
+  .quality-image {
+    width: 80%; 
+    height: auto; 
+    margin-top: 1.5rem; 
+  }
+}
+
+
+
+/* Contact Us Section */
+.contact-us-section {
+  padding: 3.125rem 1.25rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  width: 80%;
+  margin: auto;
+  border-radius: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.contact-us-section h2 {
+  text-align: center;
+  font-size: 2.25rem; 
+  margin-bottom: 2.5rem;
+}
+
+.contact-us-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.25rem; 
+  padding-bottom: 1.4rem;
+  gap: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  width: 22%;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1.25rem;
+  border-radius: 0.625rem; 
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s ease;
+}
+
+.contact-item:hover{
+  transform: scale(1.1);
+}
+
+
+
+.contact-icon {
+  margin-right: 1.25rem;
+  transition: transform 0.6s ease;
+}
+
+.contact-icon img {
+  height: 3.125rem; 
+}
+
+.contact-content h3 {
+  margin: 0;
+  font-size: 1.5rem; 
+  color: #ffdd57;
+  display: flex;
+}
+
+.contact-content p {
+  margin: 0.3125rem 0; 
+  font-size: 1rem; 
+  line-height: 1.6;
+  display: flex;
+}
+
+.contact-info {
+  font-weight: bold;
+  font-size: 1.125rem; 
+}
+
+.contact-link {
+  display: inline-block;
+  margin-top: 0.625rem; 
+  padding: 0.5rem 0.9375rem; 
+  background-color: #ffdd57;
+  color: black;
+  border-radius: 0.3125rem; 
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.contact-link:hover {
+  background-color: #e6c400;
+}
+
+/* Hover Effect for Icon */
+.contact-item:hover .contact-icon {
+  transform: scale(1.3) rotate(360deg);
+}
+
+/* Hover Effect for Container */
+.contact-item:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width:1100px){
+  
+  .contact-us-container{
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    
+  }
+  .contact-item{
+    flex-direction: column;
+    width: 100%;
+
+  }
+  .contact-content h3,.contact-info{
+    justify-content: center;
+  }
+  .contact-content p{
+    text-align: center;
+  }
+  .contact-link {
+    display: inline-block; 
+    margin: 0 auto; 
+    padding: 0.5rem 1.5rem; 
+  }
+  
+  
+  
+}

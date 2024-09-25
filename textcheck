@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ON GUARD 24/7</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <img src="logo.svg" alt="ON GUARD 24/7 Logo" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="search-icon">
+          <img src="search.png" alt="Search Icon" />
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="main-content">
+      <h1>Canadian Veteran owned and operated</h1>
+      <p>Proudly Supporting Canadian Veterans</p>
+    </section>
+
+    <!-- Flex Section -->
+    <section class="services-section">
+      <div class="flex-container">
+        <!-- Flex Item 1 -->
+        <div class="flex-item">
+          <img src="security.png" alt="Service 1 Logo" />
+          <h2>Security Services</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit
+            amet lacinia tortor.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+
+        <!-- Flex Item 2 -->
+        <div class="flex-item">
+          <img src="cleaning.png" alt="Service 2 Logo" />
+          <h2>Janitorial Services</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit
+            amet lacinia tortor.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+
+        <!-- Flex Item 3 -->
+        <div class="flex-item">
+          <img src="maintenance.png" alt="Service 3 Logo" />
+          <h2>Maintenance Services</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit
+            amet lacinia tortor.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who Are We Section -->
+    <section class="who-are-we-section">
+      <div class="who-are-we-container">
+        <!-- Left Side (Content) -->
+        <div class="who-content">
+          <h2>Who Are We?</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            dapibus enim vitae nunc blandit, ut scelerisque magna suscipit. Sed
+            a turpis a metus lacinia fringilla et nec nulla.
+          </p>
+          <a href="#" class="watch-video-btn">Watch Video</a>
+        </div>
+        <!-- Right Side (Image) -->
+        <div class="who-image">
+          <img src="pexels.jpg" alt="Who Are We Image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-us-section">
+      <h2>Contact Us</h2>
+      <div class="contact-us-container">
+        <!-- Call Section -->
+        <div class="contact-item">
+          <div class="contact-icon">
+            <img src="phone-call.png" alt="Phone Icon" />
+          </div>
+          <div class="contact-content">
+            <h3>Call</h3>
+            <p>For Technical support, you can reach us on Toll No.</p>
+            <p class="contact-info">+91-8800952952</p>
+          </div>
+        </div>
+
+        <!-- Email Section -->
+        <div class="contact-item">
+          <div class="contact-icon">
+            <img src="mail.png" alt="Email Icon" />
+          </div>
+          <div class="contact-content">
+            <h3>Email</h3>
+            <p>For Any type of support, query, you can email us at</p>
+            <p class="contact-info">support@cpplusworld.com</p>
+          </div>
+        </div>
+
+        <!-- Write Us Section -->
+        <div class="contact-item">
+          <div class="contact-icon">
+            <img src="write_us.png" alt="Write Us Icon" />
+          </div>
+          <div class="contact-content">
+            <h3>Write Us</h3>
+            <p>
+              Have queries, doubts, or suggestions? Raise an entry by filling
+              out the form, and we'll be more than happy to help.
+            </p>
+            <a href="#" class="contact-link">Click here</a>
+          </div>
+        </div>
+
+        <!-- Live Chat Section -->
+        <div class="contact-item">
+          <div class="contact-icon">
+            <img src="live-chat.png" alt="Live Chat Icon" />
+          </div>
+          <div class="contact-content">
+            <h3>Live Chat</h3>
+            <p>
+              Need assistance regarding CPPLUS? We'll get you the help you need.
+            </p>
+            <a href="#" class="contact-link">Click here</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stay Updated and Follow Us Section -->
+    <section class="subscribe-follow-section">
+      <div class="subscribe-container">
+        <!-- Stay Updated Section -->
+        <div class="stay-updated">
+          <h3>Stay Updated</h3>
+          <p>Subscribe to our newsletter for the latest updates and news.</p>
+          <form class="subscribe-form">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <button type="submit">Sign Up</button>
+          </form>
+        </div>
+
+        <!-- Follow Us Section -->
+        <div class="follow-us">
+          <h3>Follow Us</h3>
+          <p>Follow us on social media for the latest updates.</p>
+          <div class="social-icons">
+            <a href="#"><img src="facebook.png" alt="Facebook" /></a>
+            <a href="#"><img src="twitter.png" alt="Twitter" /></a>
+            <a href="#"><img src="instagram.png" alt="Instagram" /></a>
+            <a href="#"><img src="linkedin.png" alt="LinkedIn" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+      <div class="footer-container">
+        <!-- About Column -->
+        <div class="footer-column">
+          <h3>About</h3>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Mission & Vision</a></li>
+            <li><a href="#">Leadership</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- Services Column -->
+        <div class="footer-column">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Janitorial</a></li>
+            <li><a href="#">Maintenance</a></li>
+            <li><a href="#">Consulting</a></li>
+          </ul>
+        </div>
+
+        <!-- Products Column -->
+        <div class="footer-column">
+          <h3>Products</h3>
+          <ul>
+            <li><a href="#">Surveillance Systems</a></li>
+            <li><a href="#">Cleaning Equipment</a></li>
+            <li><a href="#">Maintenance Tools</a></li>
+            <li><a href="#">Security Solutions</a></li>
+          </ul>
+        </div>
+
+        <!-- Terms & Conditions Column -->
+        <div class="footer-column">
+          <h3>Terms & Conditions</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Refund Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 ON GUARD 24/7. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
+--------------------- /* General Styles */ body { margin: 0; font-family: Arial,
+sans-serif; background: linear-gradient(to bottom right, #df684a, #9eb3d7); /*
+Gradient background */ color: white; } a { color: #ffdd57; text-decoration:
+none; } a:hover { text-decoration: underline; } /* Navbar Styles */ .navbar {
+display: flex; justify-content: space-between; align-items: center; padding:
+20px; background-color: rgba(152, 152, 152, 0.7); } .logo img { height: 50px; }
+nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 20px; }
+nav ul li { display: inline; } nav ul li a { color: white; font-weight: bold;
+padding: 8px 15px; transition: background-color 0.3s; } nav ul li a:hover {
+background-color: rgba(255, 255, 255, 0.2); border-radius: 5px; } .search-icon
+img { height: 30px; cursor: pointer; } /* Main Content Styles */ .main-content {
+text-align: center; padding: 100px 20px; } .main-content h1 { font-size: 48px; }
+.main-content p { font-size: 24px; margin-top: 10px; } /* Flex Container for
+Services */ .services-section { padding: 50px 20px; } .flex-container { display:
+flex; justify-content: space-around; gap: 20px; } .flex-item { background-color:
+rgba(64, 76, 101, 0.7); border-radius: 10px; padding: 20px; text-align: center;
+width: 30%; } .flex-item img { height: 80px; } .flex-item h2 { margin: 20px 0
+10px; } .flex-item p { font-size: 16px; line-height: 1.5; } .flex-item a {
+display: inline-block; margin-top: 10px; padding: 8px 15px; background-color:
+#ffdd57; color: black; border-radius: 5px; transition: background-color 0.3s; }
+.flex-item a:hover { background-color: #e6c400; } /* Who Are We Section */
+.who-are-we-section { padding: 50px 20px; display: flex; justify-content:
+center; align-items: center; } .who-are-we-container { display: flex;
+justify-content: space-between; align-items: center; max-width: 1200px; width:
+100%; gap: 30px; } .who-content { width: 50%; } .who-content h2 { font-size:
+36px; margin-bottom: 20px; } .who-content p { font-size: 16px; line-height: 1.8;
+margin-bottom: 20px; } .watch-video-btn { display: inline-block; padding: 10px
+20px; background-color: #ffdd57; color: black; border-radius: 5px;
+text-decoration: none; font-weight: bold; transition: background-color 0.3s; }
+.watch-video-btn:hover { background-color: #e6c400; } /* Right Side Image
+Styling */ .who-image { width: 50%; position: relative; } .who-image img {
+width: 100%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+position: relative; top: -40px; /* Makes the image overflow above the content */
+} /* Contact Us Section */ .contact-us-section { padding: 50px 20px;
+background-color: rgba(0, 0, 0, 0.7); color: white; } .contact-us-section h2 {
+text-align: center; font-size: 36px; margin-bottom: 40px; }
+.contact-us-container { display: flex; justify-content: space-between; gap:
+20px; } .contact-item { display: flex; align-items: center; width: 22%; /*
+Adjust width to fit 4 sections in one line */ background-color: rgba(255, 255,
+255, 0.1); padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0,
+0, 0.2); transition: transform 0.3s ease; } .contact-icon { margin-right: 20px;
+transition: transform 0.6s ease; } .contact-icon img { height: 50px; }
+.contact-content h3 { margin: 0; font-size: 24px; color: #ffdd57; }
+.contact-content p { margin: 5px 0; font-size: 16px; line-height: 1.6; }
+.contact-info { font-weight: bold; font-size: 18px; } .contact-link { display:
+inline-block; margin-top: 10px; padding: 8px 15px; background-color: #ffdd57;
+color: black; border-radius: 5px; text-decoration: none; font-weight: bold;
+transition: background-color 0.3s; } .contact-link:hover { background-color:
+#e6c400; } /* Hover Effect for Icon */ .contact-item:hover .contact-icon {
+transform: rotate(360deg); } /* Responsive Design */ @media (max-width: 1024px)
+{ .contact-item { width: 45%; /* Adjust to two columns on smaller screens */ } }
+@media (max-width: 768px) { .contact-item { width: 100%; /* Stack vertically on
+mobile */ } } /* Subscribe and Follow Us Section */ .subscribe-follow-section {
+padding: 50px 20px; background-color: rgba(192, 153, 153, 0.9); color: white;
+display: flex; justify-content: center; } .subscribe-container { display: flex;
+justify-content: space-between; max-width: 1200px; width: 100%; gap: 50px; }
+.stay-updated, .follow-us { flex: 1; padding: 20px; } .stay-updated h3,
+.follow-us h3 { font-size: 28px; margin-bottom: 20px; color: #ffdd57; }
+.stay-updated p, .follow-us p { font-size: 16px; margin-bottom: 20px; }
+.subscribe-form { display: flex; gap: 10px; } .subscribe-form input { flex: 1;
+padding: 10px; border: none; border-radius: 5px; font-size: 16px; }
+.subscribe-form button { padding: 10px 20px; background-color: #ffdd57; border:
+none; border-radius: 5px; font-weight: bold; color: black; cursor: pointer;
+transition: background-color 0.3s; } .subscribe-form button:hover {
+background-color: #e6c400; } .social-icons { display: flex; gap: 20px; }
+.social-icons a img { width: 40px; height: 40px; transition: transform 0.3s
+ease; } .social-icons a:hover img { transform: rotate(360deg); } /* Responsive
+Design */ @media (max-width: 768px) { .subscribe-container { flex-direction:
+column; text-align: center; gap: 30px; } .social-icons { justify-content:
+center; } } /* Footer Section */ .footer-section { background-color: rgba(61,
+73, 99, 0.9); color: white; padding: 40px 20px; } .footer-container { display:
+flex; justify-content: space-between; max-width: 1200px; margin: 0 auto; gap:
+50px; } .footer-column { flex: 1; } .footer-column h3 { font-size: 22px;
+margin-bottom: 20px; color: #ffdd57; } .footer-column ul { list-style: none;
+padding: 0; } .footer-column ul li { margin-bottom: 10px; } .footer-column ul li
+a { color: white; text-decoration: none; font-size: 16px; transition: color
+0.3s; } .footer-column ul li a:hover { color: #ffdd57; } .footer-bottom {
+text-align: center; margin-top: 20px; font-size: 14px; color: #ccc; }
+.footer-bottom p { margin: 0; } /* Responsive Design */ @media (max-width:
+768px) { .footer-container { flex-direction: column; text-align: center; gap:
+30px; } }

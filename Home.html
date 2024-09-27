@@ -4,34 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ON GUARD 24/7</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="Home.css" />
+    
+    <link rel="icon" type="image/x-icon" href="./images/logo.png" />
   </head>
   <body>
     <!-- Navigation Bar -->
     <header>
+
+      <!-- Intially Hidden -->
+      <div class="hamburger" id="hamburger">
+        <img src="./images/Header/hamburger-2-svgrepo-com.svg" alt="Menu" />
+      </div>
+      <div class="hamburger-menu" id="nav-links">
+      
+        <ul class="menu__box" >
+          <li><a href="login.html" class="login-btn">Login</a></li>
+          <li><a class="menu__item" href="">Home</a></li>
+          <li><a class="menu__item" href="services.html">Services</a></li>
+          <li><a class="menu__item" href="portfolio.html">Portfolio</a></li>
+          <li><a class="menu__item" href="contact-us.html">Contact</a></li>
+        </ul>
+      </div>
+
       <div class="navbar">
         <div class="logo">
-          <img src="logoq.png" alt="ON GUARD 24/7 Logo" />
+          <img src="./images/Header/logoq.png" alt="ON GUARD 24/7 Logo" />
         </div>
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact Us</a></li>
+        <nav class="nav-links" id="nav-links">
+          <ul> 
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
           </ul>
         </nav>
-        <div class="auth-options">
-          <a href="#" class="signup-btn">Sign up</a>
-          <a href="#" class="login-btn">Login</a>
+        <div class="auth-options" id="auth-options">
+          <a href="login.html" class="login-btn">Login</a>
         </div>
-        <div class="hamburger">
-          <img src="hamburger.png" alt="Menu" />
-        </div>
+        
       </div>
     </header>
+
     <div class="ref">
       <!-- Main Content Section -->
       <section class="main-content">
@@ -43,32 +57,32 @@
         <div class="flex-container">
           <!-- Flex Item 1 -->
           <div class="flex-item">
-            <img src="security.png" alt="Service 1 Logo" />
+            <img src="./images/Home/residential-security.svg" alt="Service 1 Logo" />
             <h2>Residential Security</h2>
             <p>
               Comprehensive residential security solutions designed to safeguard your condo with 24/7 protection and rapid response.
             </p>
-            <a href="#">Learn more</a>
+            <a href="services.html">Learn more</a>
           </div>
 
           <!-- Flex Item 2 -->
           <div class="flex-item">
-            <img src="cleaning.png" alt="Service 2 Logo" />
+            <img src="./images/Home/site-security.png" alt="Service 2 Logo" />
             <h2>Site Security</h2>
             <p>
               Tailored site security solutions offering real-time protection and proactive measures to secure your site around the clock.
             </p>
-            <a href="#">Learn more</a>
+            <a href="services.html">Learn more</a>
           </div>
 
           <!-- Flex Item 3 -->
           <div class="flex-item">
-            <img src="maintenance.png" alt="Service 3 Logo" />
+            <img src="./images/Home/event-security.png" alt="Service 3 Logo" />
             <h2>Event Security</h2>
             <p>
               Expert event security services providing seamless crowd management, threat prevention, and 24/7 on-site protection for a safe experience.
             </p>
-            <a href="#">Learn more</a>
+            <a href="services.html">Learn more</a>
           </div>
         </div>
       </section>
@@ -86,7 +100,7 @@
         </div>
         <!-- Right Side (Image) -->
         <div class="who-image">
-          <img src="who-are-we.jpeg" alt="Who Are We Image" />
+          <img src="./images/Home/who-are-we.jpeg" alt="Who Are We Image" />
         </div>
       </div>
     </section>
@@ -97,7 +111,7 @@
       <div class="why-container">
         <!-- left Side (Image) -->
         <div class="why-image">
-          <img src="why-choose-us.jpg" alt="Who Are We Image" />
+          <img src="./images/Home/why-choose-us.jpg" alt="Who Are We Image" />
         </div>
         <!-- right Side (Content) -->
         <div class="why-content">
@@ -121,7 +135,7 @@
         </div>
         <!-- Right Side (Image) -->
         <div class="quality-image">
-          <img src="quality.jpg" alt="CCTV" />
+          <img src="./images/Home/quality.jpg" alt="CCTV" />
         </div>
       </div>
     </section>
@@ -133,7 +147,7 @@
         <!-- Call Section -->
         <div class="contact-item">
           <div class="contact-icon">
-            <img src="phone-call.png" alt="Phone Icon" />
+            <img src="./images/Home/phone-call.png" alt="Phone Icon" />
           </div>
           <div class="contact-content">
             <h3>Call</h3>
@@ -145,7 +159,7 @@
         <!-- Email Section -->
         <div class="contact-item">
           <div class="contact-icon">
-            <img src="mail.png" alt="Email Icon" />
+            <img src="./images/Home/mail.png" alt="Email Icon" />
           </div>
           <div class="contact-content">
             <h3>Email</h3>
@@ -157,7 +171,7 @@
         <!-- Write Us Section -->
         <div class="contact-item">
           <div class="contact-icon">
-            <img src="write_us.png" alt="Write Us Icon" />
+            <img src="./images/Home/write_us.png" alt="Write Us Icon" />
           </div>
           <div class="contact-content">
             <h3>Write Us</h3>
@@ -165,26 +179,60 @@
               Have queries, doubts, or suggestions? Raise an entry by filling
               out the form, and we'll be more than happy to help.
             </p>
-            <a href="#" class="contact-link">Click here</a>
+            <div class="contact-button">
+              <a href="./images/Home/contact-us.html" class="contact-link">Click here</a>
+            </div>
           </div>
         </div>
 
         <!-- Live Chat Section -->
         <div class="contact-item">
           <div class="contact-icon">
-            <img src="live-chat.png" alt="Live Chat Icon" />
+            <img src="./images/Home/live-chat.png" alt="Live Chat Icon" />
           </div>
           <div class="contact-content">
             <h3>Live Chat</h3>
             <p>
               Need assistance regarding booking? We'll get you the help you need.
             </p>
-            <a href="#" class="contact-link">Click here</a>
+            <div class="contact-button">
+              <a href="contact-us.html" class="contact-link">Click here</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Stay Updated and Follow Us Section -->
+    <section class="subscribe-follow-section">
+      <div class="subscribe-container">
+        <!-- Stay Updated Section -->
+        <div class="stay-updated">
+          <h3>Stay Updated</h3>
+          <p>Subscribe to our newsletter for the latest updates and news.</p>
+          <form class="subscribe-form">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <button type="submit">Sign Up</button>
+          </form>
+        </div>
+
+        <!-- Follow Us Section -->
+        <div class="follow-us">
+          <h3>Follow Us</h3>
+          <p>Follow us on social media for the latest updates.</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/"><img src="./images/Footer/facebook.png" alt="Facebook" /></a>
+            <a href="https://x.com/"><img src="./images/Footer/twitter.png" alt="Twitter" /></a>
+            <a href="https://www.instagram.com/"><img src="./images/Footer/instagram.png" alt="Instagram" /></a>
+            <a href="https://www.linkedin.com/home"><img src="./images/Footer/linkedin.png" alt="LinkedIn" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer Section -->
     <footer class="footer-section">
@@ -204,10 +252,10 @@
         <div class="footer-column">
           <h3>Services</h3>
           <ul>
-            <li><a href="#">Security</a></li>
-            <li><a href="#">Janitorial</a></li>
-            <li><a href="#">Maintenance</a></li>
-            <li><a href="#">Consulting</a></li>
+            <li><a href="#">Residential Security</a></li>
+            <li><a href="#">Site Security</a></li>
+            <li><a href="#">Event Security</a></li>
+            <li><a href="#">Monitering</a></li>
           </ul>
         </div>
 
@@ -215,10 +263,10 @@
         <div class="footer-column">
           <h3>Products</h3>
           <ul>
-            <li><a href="#">Surveillance Systems</a></li>
-            <li><a href="#">Cleaning Equipment</a></li>
-            <li><a href="#">Maintenance Tools</a></li>
-            <li><a href="#">Security Solutions</a></li>
+            <li><a href="#">Cameras</a></li>
+            <li><a href="#">Alarms</a></li>
+            <li><a href="#">Locks</a></li>
+            <li><a href="#">Systems</a></li>
           </ul>
         </div>
 

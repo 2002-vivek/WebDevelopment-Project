@@ -3,6 +3,7 @@ body {
   margin: 0;
   font-family: "Titillium Web", sans-serif;
   background-color: #f5ffff;
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
   @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 }
 
@@ -24,6 +25,7 @@ a:hover {
   box-sizing: border-box;
 }
 
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -31,6 +33,22 @@ a:hover {
   background-color: #333;
   padding: 0.625rem 1.25rem; 
   /* background-image: url(blak\ nav\ 2.jpg); */
+}
+
+
+.hamburger{
+  display: none;
+}
+
+.ref{
+  background-image: url(./images/bgnew.jpg);
+}
+.nav-links {
+  display: flex; 
+}
+
+.nav-links.show {
+  display: flex; 
 }
 
 .logo img {
@@ -81,57 +99,126 @@ nav ul li a:hover {
   background-color: #777;
 }
 
-.signup-btn {
-  background-color: #28a745;
+.hamburger {
+  display: none; 
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
 }
 
-.signup-btn:hover {
-  background-color: #218838;
+.hamburger img {
+  width: 30px;
+  height: 30px;
 }
 
-.login-btn {
-  background-color: #007bff;
+/* Dropdown Menu Style */
+.hamburger-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 200px; 
+  background-color: #333;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
 }
 
-.login-btn:hover {
-  background-color: #0056b3;
+.hamburger-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
+
+.hamburger-menu ul li {
+  padding: 10px 20px;
+}
+
+.hamburger-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.hamburger-menu ul li a:hover {
+  background-color: #444;
+  border-radius: 4px;
+}
+
+.menu__box {
+  padding: 15px 0;
+}
+
+.hamburger-menu.show {
+  display: block;
+}
+
+
+
+
 
 @media (max-width: 950px) { 
-  nav ul li {
-      display: none; /* Hide navigation items */
-  }
-
-  .auth-options{
-    display: none;
-  }
-
-  .hamburger img {
-    display: block;
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-
-  .navbar{
-    display: flex;
-    justify-content: space-between;
-    
+  .nav-links, .auth-options {
+    display: none; 
   }
 
   .logo img{
     width: 4.5rem;
-        height: 3rem;
+    height: 3rem;
+  }
+
+  .nav-links.show {
+    display: block;
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    width: 100%;
+    background-color: #333; 
+    padding: 1rem;
+    z-index: 999;
+  }
+
+  .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links ul li {
+    margin: 1rem 0;
+  }
+
+  .nav-links ul li a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  /* Styling for hamburger menu */
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
+
+  .hamburger img {
+    width: 30px;
+    height: 30px;
   }
 }
 
-@media (min-width: 950px){
-  .hamburger {
-    display: none;
-  }
-}
-.ref{
-  background-image: url(bgnew.jpg);
-}
+
+
+
+
+
+
+
+
 
 
 /* Main Content Styles */
@@ -170,7 +257,6 @@ nav ul li a:hover {
 
 .services-section {
   padding: 3.125rem 1.25rem;
-
   width: 80%;
   margin: auto;
   display: flex;
@@ -242,9 +328,9 @@ nav ul li a:hover {
 /* Who Are We Section */
 .who-section {
   background-color: #bfbfbf ;    
-  width: 80%;
+  width: 90%;
   margin-top: 10rem;
-  height: 45vh;
+  height: 25rem;
 }
 
 .who-container {
@@ -252,6 +338,7 @@ nav ul li a:hover {
   justify-content: center;
   align-items: center;
   height: 100%;
+  background-color: #992e3b;
   animation: motion 2.2s ease forwards;
 }
 
@@ -271,17 +358,19 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 2rem;
+  padding: 3.5rem;
   max-width: 50%;
+  margin: 2rem;
+  color: #FCF6F5;
 }
 
 .who-content h2 {
-  font-size: 2.25rem; 
+  font-size: 3rem; 
   margin-bottom: 1.25rem; 
 }
 
 .who-content p {
-  font-size: 1rem; 
+  font-size: 1.2rem; 
   line-height: 1.8;
   font-weight: 500;
   margin-bottom: 1.25rem; 
@@ -289,8 +378,8 @@ nav ul li a:hover {
 
 /* Right Side Image Styling */
 .who-image {
-  width: 20%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
   transition: transform 0.3s ease;  
 }
 
@@ -319,10 +408,11 @@ nav ul li a:hover {
   .who-content {
     max-width: 100%; 
     padding: 1rem; 
+    margin: 2.5rem;
   }
 
   .who-image {
-    width: 80%; 
+    width: 50%; 
     height: auto; 
     margin-top: 1.5rem; 
   }
@@ -334,12 +424,12 @@ nav ul li a:hover {
 
 
 .why-section{
-  background-color: #bfbfbf ;    
-  width: 80%;
+  background-color:  #31473A ;    
+  width: 90%;
   margin-left: auto;
   margin-top: 10rem;
   margin-bottom: 10rem;
-  height: 45vh;
+  height: 25rem;
 }
 
 .why-container{
@@ -366,25 +456,27 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 2rem;
+  color: #EDF4F2;
+  padding: 3.5rem;
+  margin: 2rem;
   max-width: 50%;
 }
 
 .why-content h2{
-  font-size: 2.25rem; 
+  font-size: 3rem; 
   margin-bottom: 1.25rem; 
 }
 
 .why-content p{
-  font-size: 1rem; 
+  font-size: 1.2rem;
   line-height: 1.8;
   font-weight: 500;
-  margin-bottom: 1.25rem; 
+  margin: 2rem 0rem;
 }
 
 .why-image {
-  width: 20%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
   transition: transform 0.3s ease;  
 }
 
@@ -430,11 +522,11 @@ nav ul li a:hover {
 
 
 .quality-section {
-  background-color: #bfbfbf ;    
-  width: 80%;
+  background-color: #F7E5DA ;    
+  width: 90%;
   margin-top: 10rem;
   margin-bottom: 10rem;
-  height: 45vh;
+  height: 25rem;
 }
 
 .quality-container {
@@ -461,17 +553,19 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 2rem;
+  color: #832B00;
+  padding: 3.5rem;
+  margin: 2rem;
   max-width: 50%;
 }
 
 .quality-content h2 {
-  font-size: 2.25rem; 
+  font-size: 3rem;
   margin-bottom: 1.25rem; 
 }
 
 .quality-content p {
-  font-size: 1rem; 
+  font-size: 1.2rem; 
   line-height: 1.8;
   font-weight: 500;
   margin-bottom: 1.25rem; 
@@ -481,8 +575,8 @@ nav ul li a:hover {
 
 /* Right Side Image Styling */
 .quality-image {
-  width: 20%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
   transition: transform 0.3s ease;  
 }
 
@@ -511,6 +605,7 @@ nav ul li a:hover {
   .quality-content {
     max-width: 100%; 
     padding: 1rem; 
+    margin: 2.5rem;
   }
 
   .quality-image {
@@ -540,9 +635,9 @@ nav ul li a:hover {
 }
 
 .contact-us-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 1.25rem; 
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: center;
   padding-bottom: 1.4rem;
   gap: 1.5rem;
 }
@@ -550,7 +645,8 @@ nav ul li a:hover {
 .contact-item {
   display: flex;
   align-items: center;
-  width: 22%;
+  justify-content: center;
+  /* width: 22%; */
   background-color: rgba(255, 255, 255, 0.1);
   padding: 1.25rem;
   border-radius: 0.625rem; 
@@ -573,11 +669,13 @@ nav ul li a:hover {
   height: 3.125rem; 
 }
 
+
 .contact-content h3 {
   margin: 0;
   font-size: 1.5rem; 
   color: #ffdd57;
   display: flex;
+
 }
 
 .contact-content p {
@@ -608,19 +706,23 @@ nav ul li a:hover {
   background-color: #e6c400;
 }
 
-/* Hover Effect for Icon */
 .contact-item:hover .contact-icon {
   transform: scale(1.3) rotate(360deg);
 }
 
-/* Hover Effect for Container */
 .contact-item:hover {
   transform: scale(1.2);
 }
 
-@media (max-width:1100px){
+.contact-button{
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width:1160px){
   
   .contact-us-container{
+    grid-template-columns: repeat(1,1fr);
     flex-direction: column;
     align-items: center;
     padding: 2rem;
@@ -649,12 +751,9 @@ nav ul li a:hover {
 
 
 
-
-
 /* Subscribe and Follow Us Section */
 .subscribe-follow-section {
-  padding: 3.125rem 1.25rem;
-  /* background-color: rgba(125, 122, 122, 0.9); */
+  padding: 3.125rem 1.25rem; 
   background-color:rgba(38, 39, 43, 0.9);
   color: white;
   display: flex;
@@ -663,9 +762,9 @@ nav ul li a:hover {
 .subscribe-container {
   display: flex;
   justify-content: space-between;
-  max-width: 75rem;
+  max-width: 75rem; 
   width: 100%;
-  gap: 3.125rem; 
+  gap: 3.125rem;
 }
 .stay-updated,
 .follow-us {
@@ -675,7 +774,7 @@ nav ul li a:hover {
 .stay-updated h3,
 .follow-us h3 {
   font-size: 1.75rem; 
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.25rem; 
   color: #ffcc00;
 }
 .stay-updated p,
@@ -685,11 +784,11 @@ nav ul li a:hover {
 }
 .subscribe-form {
   display: flex;
-  gap: 0.625rem;
+  gap: 0.625rem; 
 }
 .subscribe-form input {
   flex: 1;
-  padding: 0.625rem; 
+  padding: 0.625rem;
   border: none;
   border-radius: 0.3125rem; 
   font-size: 1rem; 
@@ -709,7 +808,7 @@ nav ul li a:hover {
 }
 .social-icons {
   display: flex;
-  gap: 1.25rem;
+  gap: 1.25rem; 
 }
 .social-icons a img {
   width: 2.5rem; 
@@ -726,12 +825,14 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 1.875rem;
+    gap: 1.875rem; 
   }
   .social-icons {
     justify-content: center;
   }
 }
+
+
 
 /* Footer Section */
 .footer-section {
@@ -744,7 +845,7 @@ nav ul li a:hover {
   justify-content: space-between;
   max-width: 75rem;
   margin: 0 auto;
-  gap: 3.125rem;
+  gap: 3.125rem; 
 }
 .footer-column {
   flex: 1;
@@ -759,7 +860,7 @@ nav ul li a:hover {
   padding: 0;
 }
 .footer-column ul li {
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.625rem; 
 }
 .footer-column ul li a {
   color: white;
@@ -782,7 +883,6 @@ nav ul li a:hover {
   margin: 0;
   font-size: 1.3rem;
 }
-
 
 /* Responsive Design */
 @media (max-width: 768px) {

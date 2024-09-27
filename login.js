@@ -1,3 +1,11 @@
+
+document.getElementById('hamburger').addEventListener('click', function () {
+    var navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('show'); 
+  });
+  
+
+
 function toggleSignup(){
     document.getElementById("login-toggle").style.backgroundColor="#fff";
      document.getElementById("login-toggle").style.color="#222";

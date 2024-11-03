@@ -1,64 +1,104 @@
 # ON GUARD 24/7 – Website
 
 
+-----
 **Overview**
 
-ON GUARD 24/7 offers professional security services, specializing in **Residential Security**, **Site Security**, and **Event Security**. The website is designed to showcase these services, provide insight into the company’s past projects through a portfolio, and allow potential clients to get in touch via a contact form. The site also includes a login system for users to access personalized content or manage services.
+We have created a website for **ON GUARD 24/7**, which provides professional security services for Residential Security, Site Security, and Event Security. The website showcases these services, highlights past projects through a portfolio, and allows clients to get in touch through a contact form. There is also a login system for users to access personalized content and manage their services.
 
 **Features**
 
-1. **Home Page (Home.html)**:
-    - **Main Features**: Provides an overview of ON GUARD 24/7’s services, highlighting Residential, Site, and Event Security. The homepage includes a "Who We Are" section introducing the company’s mission and experience, a "Why Choose Us" section explaining their advantages, and a contact section.
-    - **Navigation**: A responsive navigation bar with links to Services, Portfolio, and Contact pages, as well as a login option. The navigation is optimized for mobile through a hamburger menu, which is toggled using JavaScript​.
-2. **Services Page (services.html)**:
-    - **Residential Security**: Monitors access to residential properties, performs regular security patrols, and responds to alarms.
-    - **Event Security**: Ensures crowd control, screens attendees, and manages security incidents.
-    - **Site Security**: Focuses on large-site protection with perimeter patrols and asset protection.
-    - The page includes visuals for each service, enhancing the user’s understanding of ON GUARD 24/7’s capabilities.
-3. **Portfolio Page (portfolio.html)**:
-    - This page showcases a gallery of the company’s work, categorized into sectors such as **Condominiums** and **Embassies**. Images of various sites, such as hotels and corporate offices, highlight the company’s security management experience. Some projects are marked as restricted due to confidentiality.
-4. **Contact Page (contact-us.html)**:
-    - Users can fill out a contact form to inquire about services or raise queries. The form includes fields for name, email, phone, and message.
-    - Additional contact options include phone numbers, email, and social media links, ensuring easy communication.
-    - The page also has sections for newsletter subscription and following the company on social media.
-5. **Login Page (login.html)**:
-    - Allows users to log in or sign up for an account. The login form toggles between a sign-up and a login interface using JavaScript. The sign-up form includes fields for creating an account, while the login form asks for an email/username and password.
+**1. Home Page (Home.html)**
 
+- **Main Features**: An overview of ON GUARD 24/7’s services, including Residential, Site, and Event Security. The page includes sections like "Who We Are" and "Why Choose Us" to introduce the company's mission and highlight advantages.
+- **Navigation**: Includes a responsive navigation bar with links to **Services**, **Portfolio**, and **Contact** pages, plus a **Login** option. The mobile version uses a JavaScript-driven hamburger menu for accessibility.
+
+**2. Services Page (services.html)**
+
+- **Residential Security**: Offers access control, regular patrols, and alarm response for residential properties.
+- **Event Security**: Focuses on crowd control, attendee screening, and incident management for events.
+- **Site Security**: Provides patrols and asset security for large sites.
+- The page uses images to enhance each service description, helping clients understand ON GUARD 24/7’s offerings.
+
+**3. Portfolio Page (portfolio.html)**
+
+- Displays a gallery of past projects organized by categories like Condominiums and Embassies, with images showcasing the company’s experience in security management. Some projects are restricted for confidentiality.
+
+**4. Contact Page (contact-us.html)**
+
+- Contains a form for users to inquire about services, with fields for name, email, phone, and message.
+- Additional contact options include phone, email, and social media links.
+- Sections for subscribing to a newsletter and following the company on social media.
+
+**5. Login Page (login.html)**
+
+- Allows users to log in or sign up with fields for email, username, and password. JavaScript controls the toggle between login and signup forms.
+-----
+**Backend Routes and API Endpoints**
+
+**User Routes**
+
+The user-related routes provide functionality for managing guard requests and subscription details.
+
+- **POST /api/subscribe**: Subscribes a user to updates via email. Returns a conflict error if the email is already subscribed.
+- **Request Guards Page (requestGuards.html)**:
+  - **POST /api/request-guards**: Allows users to create guard requests by specifying service type, number of guards, and cost.
+  - **GET /api/request-guards**: Users can review all their submitted requests.
+  - **PATCH /api/request-guards/**
+
+: Users can edit specific details of their requests by ID.
+
+- **DELETE /api/request-guards/**
+
+: Allows users to delete a specific request by ID.
+
+**Data Transfer for Request Guards**:
+
+- The frontend submits a JSON object with services (array of service details) and total\_cost to the POST route. The backend validates and saves this data to MongoDB, handling duplicate checks and responding with appropriate messages.
+
+**Contact Us Page (contact-us.html)**
+
+The **Contact Us** page provides a form for users to send inquiries to the platform. Here’s how the API for this page works:
+
+- **POST /api/contact**: Submits a user inquiry, which includes:
+  - **name**: User’s name.
+  - **email**: User’s email address.
+  - **phone**: User’s phone number.
+  - **company**: (Optional) Company name.
+  - **message**: The user’s message or inquiry.
+
+**Data Transfer for Contact Us**:
+
+- The frontend form captures data in the above fields and sends it as a JSON object to the backend.
+- The backend validates the fields using DTOs and stores the inquiry in MongoDB.
+- If any required field is missing, a validation error is returned to the frontend.
+
+**Admin Routes**
+
+Admin-related routes enable CRUD operations to manage user data, including names, passwords, and emails.
+
+- **POST /admin/users**: Creates a new user with name, email, and password.
+- **GET /admin/users**: Retrieves all user data for review.
+- **GET /admin/users/**: Retrieves a specific user’s details by ID.
+
+- **PATCH /admin/users/**: Allows admins to update a user’s details (name, email, or password) by ID.
+
+- **DELETE /admin/users/**: Deletes a specific user by ID.
+
+**Data Transfer for Admin Routes**:
+
+- All admin endpoints utilize DTOs (Data Transfer Objects) to validate incoming data.
+- GET, PATCH, and DELETE routes require a user’s ID as a URL parameter, while POST and PATCH requests require a JSON body with user details.
+-----
 **Key Technologies**
 
-- **HTML**: Used for structuring all the website’s content across multiple pages.
-- **CSS**: Defines the visual styling and layout of the pages. The website is designed to be fully responsive, adapting seamlessly to different screen sizes using media queries.
-- **JavaScript**: Adds interactivity, such as the toggling of the mobile navigation menu and switching between login and signup forms.
-
+- **HTML**: Structure for all website pages.
+- **CSS**: Styling for a responsive and visually appealing design.
+- **JavaScript**: Adds interactivity, such as toggling between login/signup forms and handling mobile navigation.
+- **NestJS**: Backend framework for organizing routes, services, and controllers.
+- **MongoDB**: Database for storing user data, guard requests, and subscription details.
+-----
 **Navigation and Responsiveness**
 
-- The site features a responsive **navigation bar** that collapses into a hamburger menu on smaller screens. This menu can be toggled with a click, making navigation user-friendly on mobile devices.
-- All pages are designed with responsiveness in mind, ensuring that users can easily access the site on various devices, including phones, tablets, and desktops.
-
-**File Structure**
-
-- **HTML Files**:
-  - Home.html: Main page with an overview of services and contact information.
-  - services.html: Provides detailed information about the different security services offered.
-  - portfolio.html: Displays projects ON GUARD 24/7 has completed.
-  - contact-us.html: Contact form and additional communication methods.
-  - login.html: Login and registration forms for user access.
-- **CSS Files**:
-  - Home.css: Styling for the homepage, including responsive design features​
-  - services.css: Styling for the services page.
-  - portfolio.css: Styles for the portfolio page, including grid layout for project images.
-  - contact-us.css: Defines the layout and styles for the contact page.
-  - login.css: Provides styling for the login and signup forms, ensuring a smooth user experience.
-- **JavaScript**:
-  - Home.js: Handles navigation toggle functionality for mobile devices.
-  - login.js: Manages the login and signup form toggling, making the login experience more interactive.
-
-
-
-
-
-
-**Preview**
-
-
-  ![image](https://github.com/user-attachments/assets/7f87b289-4de5-4c3f-b992-e35a80abd46c)
+- **Responsive Navigation**: The navigation bar adapts to different screen sizes, with a hamburger menu for mobile devices that opens and closes with JavaScript.
+- **Full Responsiveness**: All pages are fully responsive, ensuring a smooth user experience across phones, tablets, and desktops.

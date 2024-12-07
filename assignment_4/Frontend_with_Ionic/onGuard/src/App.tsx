@@ -59,7 +59,7 @@ import RequestGuards from './pages/requestGuards';
 setupIonicReact();
 
 const TabBar: React.FC = () => {
-  const { token } = useUser(); 
+  const { token } = useUser(); // Access authentication context
 
   return (
     <IonTabBar slot="bottom">

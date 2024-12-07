@@ -4,7 +4,6 @@ import { useHistory } from 'react-router';
 import LoginForm from '../../components/LoginForm';
 import { login, signup } from '../utilites/Authentication';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import ExploreContainer from '../../components/ExploreContainer';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import { useUser } from '../UserContext';

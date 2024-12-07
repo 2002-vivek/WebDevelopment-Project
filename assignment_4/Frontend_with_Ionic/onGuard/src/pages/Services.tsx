@@ -13,7 +13,7 @@ import {
   IonCol,
   IonText,
 } from "@ionic/react";
-import styles from '../styles/Services.module.css';
+import styles from '../styles/Services.module.css'; // Custom CSS file for styling
 import Header from "../components/Header";
 import SubscribePage from "../components/SubscribePage";
 import Footer from "../components/Footer";

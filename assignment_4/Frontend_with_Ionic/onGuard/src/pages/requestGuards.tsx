@@ -30,7 +30,7 @@ const BASE_URL = "http://localhost:3000";
 const apiUrl = `${BASE_URL}/requestGuards`;
 
 const RequestGuards: React.FC = () => {
-  const { token, userId, roles } = useUser();
+  const { token, userId, roles } = useUser(); 
   const [requests, setRequests] = useState<any[]>([]);
   const [editData, setEditData] = useState<any>(null);
   const history = useHistory();

@@ -57,7 +57,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin, onSignup }) => {
         const signupToggleStyle = {
             backgroundColor: !isLogin ? "#222" : "#fff",
             color: !isLogin ? "#fff" : "#222",
-            
+            // display: !isLogin ? "block" : "none",
         };
 
   return(

@@ -1,0 +1,83 @@
+
+
+/* Subscribe and Follow Us Section */
+.subscribe_follow_section {
+    padding: 3.125rem 1.25rem; 
+    background-color:rgba(38, 39, 43, 0.9);
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  .subscribe_container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 75rem; 
+    width: 100%;
+    gap: 3.125rem;
+  }
+  .stay_updated,
+  .follow_us {
+    flex: 1;
+    padding: 1.25rem; 
+  }
+  .stay_updated h3,
+  .follow_us h3 {
+    font-size: 1.75rem; 
+    margin-bottom: 1.25rem; 
+    color: #ffcc00;
+  }
+  .stay_updated p,
+  .follow_us p {
+    font-size: 1rem; 
+    margin-bottom: 1.25rem; 
+  }
+  .subscribe_form {
+    display: flex;
+    gap: 0.625rem; 
+  }
+  .forminput {
+    flex: 1;
+    padding: 0.625rem;
+    border: none;
+    border-radius: 0.3125rem; 
+    font-size: 1rem; 
+  }
+  .form_button {
+    border: none;
+    border-radius: 0.3125rem; 
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .form_button:hover {
+    background-color: #e6c400;
+  }
+  .social_icons {
+    display: flex;
+    gap: 1.25rem; 
+  }
+  .social_icons a img {
+    width: 2.5rem; 
+    height: 2.5rem; 
+    transition: transform 0.3s ease;
+  }
+  .social_icons a:hover img {
+    transform: rotate(360deg);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .subscribe_container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1.875rem; 
+    }
+    .social_icons {
+      justify-content: center;
+    }
+  }
+  
+  

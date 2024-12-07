@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+
+.body {
+    margin: 0 auto;
+    font-family: "Titillium Web", sans-serif;
+    background-color: #E5E8EC; 
+}
+
+
+
+
+
+/* Edit-Request */
+
+
+
+
+  /* Main Section */
+
+
+.h2 {
+    font-weight: bold;
+}
+
+.table th,
+.table td {
+    text-align: center;
+}
+
+.modal-title {
+    font-weight: bold;
+}
+
+
+.cart_container{
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: 10rem auto;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    gap: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background-color: #F8F9FA;
+}
+
+.cart_header{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 0.15rem solid #e41212;
+}
+
+
+.cart_item{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    margin: 2rem auto;
+    
+
+}
+
+.product{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.product_info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.6rem;
+}
+
+.product_info {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: start;
+    color: #000;
+}
+
+.product_info p:last-child{
+    font-size: 1rem;
+    font-weight: lighter;
+    
+}
+
+.product_image{
+    width: 40%;
+    height: 90%;
+} 
+
+.product img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+
+}
+
+
+.quantity_selector {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    width: 120px;
+    justify-content: space-around;
+    padding: 5px;
+    border-radius: 5px;
+    margin: auto;
+    gap: 0.5rem;
+}
+
+.quantity_selector button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.quantity_selector IonInput {
+    width: 30px;
+    text-align: center;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    
+}
+
+
+.total {
+    font-size: large;
+    font-weight: bold;
+    color: #000;
+}
+.total p:first-child{
+    display: none;
+}
+
+.button_div{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: flex-end;
+    padding-right: 10%;
+}
+
+.subtotal h4{
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+
+.submit_btn {
+    background-color: #000;
+    color: white;
+    padding: 0.8rem 2.8rem;
+    border: none;
+    /* width: 20%; */
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.checkout-btn:hover {
+    background-color: #333;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .cart_container{
+        border-radius: 0rem;
+    }
+    
+    .cart_header{
+        display: none;
+    }
+
+    .cart_item {
+        grid-template-columns: 1fr;
+        align-items: center;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;        gap: 1.5rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        
+    }
+    .total p:first-child{
+      display: block;
+    }   
+    .total{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .product{
+        justify-content: center;
+    }
+    
+    .button_div{
+        padding: 0rem;
+        align-items: center;
+    }
+
+
+}
+
+

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+
+.body {
+    margin: 0 auto;
+    font-family: "Titillium Web", sans-serif;
+    /* background-color: #f5ffff;
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%); */
+    background-color: #E5E8EC; 
+}
+
+
+
+/* User-Form */
+
+.h2 {
+    font-weight: bold;
+}
+
+.table th,
+.table td {
+    text-align: center;
+}
+
+.modal_title {
+    font-weight: bold;
+}
+
+
+
